@@ -1,0 +1,63 @@
+﻿<DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>  Arte </title>
+<style type="text/css">
+h1   {color: white; text-align:center; font-size:40px; font-weight:bold; font-style:normal; background-color:DarkSalmon; }
+p    {color:black; background-color:LightBlue;text-align:left; font-size:20px}
+.a { width: 900px;margin: 50 auto;border: 1px solid white; /* borde solido rojo */overflow: hidden; /* Evita espacios entre las secciones */background-color: #e6ffff; /*Color de fondo*/display: flex;justify-content: space-around;}
+form {padding: 20px;}
+label {margin: 15px 0px; clear: both; display: block;}
+input {padding: 4px; border: solid 1px #ffcccc;}
+::placeholder, option, value {color: #ffcc99; font-weight: bold;}
+*:focus {border-color: #ff5050; }
+input[type="submit"] {padding: 10px 20px; text-transform: uppercase; cursor: pointer; background-color: #ccccff; border: solid 1px #ededed;}
+input[type="submit"]
+:hover {background-color: #ff0000;}
+h2 {color: BLACK;}
+TABLE    {color:white; background-color:MistyRose; font-size:25px; text-decoration:none; font-style:Georgia text-align:center}
+img { border:2px solid white; 
+	align= center
+ }
+ </style>
+</head>
+<body background="../fondo.png" bgcolor="#ccffcc"">
+
+<marquee><h2>CONTACTANOS </h2></marquee>
+<center>
+
+    <center>
+<TABLE>
+	<th><a href="../arte.html">Inicio | </a><a href="../Leonardo/leonardo.html"> Leonardo Da Vinci | </a><a href="../abstracto/abstracto.html"> Arte Abstracto | </A><a href="../callejero/callejero.html">Arte Callejero | </a><a href="../moderno/moderno.html"> Arte Moderno |</a> <a href="contacto/contacto.html"> Contacto </a>
+</TABLE>
+</center>	
+
+</center>
+<div class="a"><form action="enviar-formulario.php" method="post"><label>Nombre:</label>
+<input maxlength="50" name="nombre" required size="50" type="text" autofocus 
+placeholder="Escribe tu nombre" /><label>Email:</label>
+<input name="email" required type="email" placeholder="Escribe tu email" />
+<label>Teléfono</label>
+<input name="telefono" pattern="[0-9]{9}" required type="tel" 
+placeholder="**********" />
+<label>Que te parecio:</label>
+<input list="aficiones" type="text" />
+<datalist id="aficiones">
+<option value="Pueden mejorar"></option>
+<option value="Nada mal"></option>
+<option value="Excelente"></option></datalist>
+<label>Fecha:</label>
+<input name="fecha" type="date" />
+<label>Hora:</label>
+<input name="hora" type="time" >
+<textarea cols="80" name="observaciones" rows="8">Puedes escribe aquí tus 
+observaciones...</textarea>
+<input type="submit" value="Enviar" />
+</form>
+</div>
+
+<center>
+</body>
+</html>
+
